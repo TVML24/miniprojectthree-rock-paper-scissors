@@ -1,0 +1,79 @@
+body {
+    background-image: url(./images/background-image.jpg);
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    padding-left: 10%;
+    color: white;
+    font-size: 40px;
+    line-height: 2.5;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: 800px;
+}
+
+#left-column {
+    width: 25%;
+    height: 100%;
+    background: yellow;
+}
+
+#centre-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    background: cyan;
+}
+
+#human-choice-image {
+    background-color: antiquewhite;
+    height: 70%;
+    width: 50%;
+}
+
+#computer-choice-image {
+    width: 50%;
+    height: 70%;
+    background-color: bisque;
+}
+
+#button-container {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color: burlywood;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    background: purple;
+}
+
+#right-column {
+    width: 25%;
+    height: 100%;
+    background: yellow;
+}
+
+footer {
+    position: relative;
+    background: aqua;
+    width: 100%;
+}
+
+h3 {
+    color: blueviolet;
+    font-size: 24px;
+    line-height: 2.5;
+    text-align: center;
+}

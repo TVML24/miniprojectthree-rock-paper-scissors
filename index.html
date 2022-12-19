@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./assets/reset.css">
+    <link rel="stylesheet"  href="./assets/style.css"> 
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    <h1>Ready to play?</h1>
-    <script src="./script.js"></script>
+    <header>
+        <h1>Ready to play?</h1>
+    </header>
+    <main>
+        <div id="left-column"></div>
+        <div id="centre-column">
+            <div id = "human-choice-image">
+                <img href="https://via.placeholder.com/250">
+            </div>
+            <div id = "computer-choice-image"></div>
+                <img href="https://via.placeholder.com/250">
+            <div id = "button-container">
+                <button class = "button rock-button">Rock</button>
+                <button class = "button paper-button">Paper</button>
+                <button class = "button scissors-button">Scissors</button>
+            </div>
+        </div>
+        <div id="right-column"></div>
+    </main>
+    <footer>
+        <h3>I hope you like repetitive, luck-based games!</h3>
+    </footer>
+<!--<script src="./assets/script.js"></script>-->
 </body>
 </html>

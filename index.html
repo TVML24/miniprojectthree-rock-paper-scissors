@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "./assets/reset.css">
     <link rel="stylesheet"  href="./assets/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Righteous&display=swap" rel="stylesheet">
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
@@ -13,17 +16,30 @@
         <h1>Ready to play?</h1>
     </header>
     <main>
-        <div id="left-column"></div>
+        <div id="left-column">
+            <label for="score">Current Score:</label>
+            <br>
+            <textarea
+            readonly
+            id="score"
+            aria-label="current-score"
+          ></textarea>
+        </div>
         <div id="centre-column">
             <div id = "human-choice-image">
-                <img href="https://via.placeholder.com/250">
+                <img id = "rock-image-human" src="./assets/images/rock.jpg">
+                <img id = "paper-image-human" src="./assets/images/paper.jpg">
+                <img id = "scissors-image-human" src="./assets/images/scissors.jpg">
             </div>
-            <div id = "computer-choice-image"></div>
-                <img href="https://via.placeholder.com/250">
+            <div id = "computer-choice-image">
+                <img id = "rock-image-computer" src="./assets/images/rock.jpg">
+                <img id = "paper-image-computer" src="./assets/images/paper.jpg">
+                <img id = "scissors-image-computer" src="./assets/images/scissors.jpg">
+            </div>
             <div id = "button-container">
-                <button class = "button rock-button">Rock</button>
-                <button class = "button paper-button">Paper</button>
-                <button class = "button scissors-button">Scissors</button>
+                <button class = "button" id ="rock-button">Rock</button>
+                <button class = "button" id ="paper-button">Paper</button>
+                <button class = "button" id ="scissors-button">Scissors</button>
             </div>
         </div>
         <div id="right-column"></div>
@@ -31,6 +47,6 @@
     <footer>
         <h3>I hope you like repetitive, luck-based games!</h3>
     </footer>
-<!--<script src="./assets/script.js"></script>-->
+<script src="./assets/script.js"></script>
 </body>
 </html>
